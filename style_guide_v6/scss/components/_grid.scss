@@ -38,6 +38,7 @@
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
+        
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
@@ -66,3 +67,8 @@
     }
   }
 }
+
+.grid__col--12 {
+  @include flexy;
+}
+

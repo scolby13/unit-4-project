@@ -1,13 +1,12 @@
+
 .nav {
-    margin: 15px;
     li {
-        display: flex;
-        flex-direction: column;
+        @include flexy;
         padding: 20px;
 
     }
     li:hover {
-        background-color: rgb(86, 205, 175);
+        background-color: $color-primary;
         border-radius: 5px;
         a {
             color: white;

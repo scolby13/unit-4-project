@@ -1,0 +1,32 @@
+// Form styles
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    >img {align-self: center; }
+    margin-top: 30px;
+    
+}
+
+legend {
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 200;
+}
+
+label {
+    display: none;
+}
+
+input {
+    border: none;
+    border-bottom: $color-primary solid 5px;
+    text-align: left;
+    padding: 15px;
+    margin: 0 25px;
+}
+
+::placeholder {
+    font-family: $font-stack-secondary;
+}

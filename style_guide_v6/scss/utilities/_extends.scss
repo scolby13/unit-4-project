@@ -1,0 +1,25 @@
+//Button Extends
+// Buttons
+
+.btn {
+    &--default {
+        @extend %btn;
+    background: $link-color;
+    }
+    &--success {
+        @extend %btn;
+        background: $success-color;
+    }
+    &--error {
+        @extend %btn;
+        background: $error-color;
+    }
+    &--warning {
+        @extend %btn;
+        background: $warning-color;
+    }
+    &--info {
+        @extend %btn;
+        background: $info-color;
+    }    
+}

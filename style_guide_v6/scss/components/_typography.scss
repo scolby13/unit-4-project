@@ -1,0 +1,34 @@
+
+a {
+    color: $link-color;
+}
+
+h4 {
+    text-align: left;
+    padding-left: 50px;
+    
+}
+
+h1 {
+    padding-left: 70px;
+    text-align: left;
+    color: $color-primary;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    padding: 0 40px 0 20px;
+    margin-left: 15%;
+    border-radius: 10px;
+    border-left: 10px $color-primary solid;
+}
+
+.headline--secondary {
+    text-align: left;
+    font-weight: 200;
+    padding: 0;
+    margin-left: 20px;
+}
