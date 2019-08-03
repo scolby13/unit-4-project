@@ -1,7 +1,7 @@
 
 .nav {
+    @include flexy;
     li {
-        @include flexy;
         padding: 20px;
 
     }
@@ -14,3 +14,5 @@
     }
     
 }
+
+//Testing

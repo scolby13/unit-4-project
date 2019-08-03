@@ -596,14 +596,6 @@ p {
   flex-direction: column;
 }
 
-.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  margin: 25px 10px 0 10px;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -635,6 +627,14 @@ input {
   font-family: "Montserrat", sans-serif;
 }
 
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 25px 10px 0 10px;
+}
+
 .img--logo {
   margin-bottom: 20px;
 }
@@ -649,9 +649,11 @@ input {
   margin-top: 20px;
 }
 
-.nav li {
+.nav {
   display: flex;
   flex-direction: column;
+}
+.nav li {
   padding: 20px;
 }
 .nav li:hover {
