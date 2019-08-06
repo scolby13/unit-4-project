@@ -5,5 +5,22 @@
     flex-direction: column;
 }
 
+@mixin big-nav {
+    @media (min-width: $break-m) {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 15px;
+        margin-right: 100px;
+    }
+}
 
+@mixin big-grid {
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+@mixin gutter {
+    @media (min-width: $break-m) {
+        margin-left: 10px;
+    }
+}

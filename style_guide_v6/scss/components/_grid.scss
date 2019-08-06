@@ -59,16 +59,17 @@
   // grid__col + grid__col, targets two sibling columns
   & + & {
 
-    // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-
-      // add grid gutter
-      margin-left: 10px;
-    }
+    @include gutter;
   }
 }
 
 .grid__col--12 {
   @include flexy;
+  @include big-grid;
+}
+
+.grid__col--12  button {
+  flex-grow: 1;
+  margin: 25px;
 }
 

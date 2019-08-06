@@ -1,6 +1,7 @@
 
 .nav {
     @include flexy;
+    @include big-nav;
     li {
         padding: 20px;
 
