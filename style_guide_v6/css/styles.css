@@ -491,7 +491,6 @@ template {
   color: #888;
   font-family: "Helvetica Neue", sans-serif;
   padding: 0;
-  max-width: 1000px;
 }
 
 ul {
@@ -513,6 +512,7 @@ p {
 @media (min-width: 768px) {
   .grid__row {
     flex-direction: row;
+    justify-content: center;
   }
 }
 .grid__col--1 {
@@ -711,16 +711,9 @@ input {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 15px;
-    margin-right: 100px;
-  }
-}
 .nav li {
   padding: 20px;
+  color: #888;
 }
 .nav li:hover {
   background-color: #56cdaf;
@@ -729,9 +722,21 @@ input {
 .nav li:hover a {
   color: white;
 }
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .nav li {
+    padding: 10px;
+    margin: 20px;
+  }
+}
 
 .container {
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 a {

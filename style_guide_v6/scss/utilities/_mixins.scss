@@ -8,15 +8,26 @@
 @mixin big-nav {
     @media (min-width: $break-m) {
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: center;
         margin-top: 15px;
-        margin-right: 100px;
+
+        li {
+            padding: 10px;
+            margin: 20px;
+        }
     }
 }
 
 @mixin big-grid {
     flex-direction: row;
     justify-content: space-around;
+}
+
+@mixin center-grid {
+    @media (min-width: $break-m) {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 @mixin gutter {

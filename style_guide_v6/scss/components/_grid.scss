@@ -17,9 +17,7 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
+    @include center-grid;
   }
 
   // .grid__col
