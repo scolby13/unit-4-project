@@ -1,7 +1,7 @@
 // Form styles
 
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     >img {align-self: center; }
@@ -9,17 +9,17 @@ form {
     
 }
 
-legend {
+.form .headline--secondary {
     text-align: left;
     margin-left: 40px;
     font-weight: 200;
 }
 
-label {
+.form__label--hidden {
     display: none;
 }
 
-input {
+.form__input {
     border: none;
     border-bottom: $color-primary solid 5px;
     text-align: left;

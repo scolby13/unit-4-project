@@ -1,9 +1,18 @@
 
 .nav {
     @include flexy;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+
     li {
         padding: 20px;
         color: $text-color;
+
+        a {
+            color: $link-color;
+            text-decoration: none;
+        }
 
     }
     li:hover {
@@ -16,4 +25,3 @@
     @include big-nav;
 }
 
-//Testing

@@ -486,22 +486,8 @@ template {
 
 * {
   box-sizing: border-box;
-  text-decoration: none;
-  text-align: center;
-  color: #888;
   font-family: "Helvetica Neue", sans-serif;
   padding: 0;
-}
-
-ul {
-  list-style: none;
-  width: 90%;
-  margin: auto;
-}
-
-p {
-  text-align: left;
-  padding: 20px 50px;
 }
 
 .grid__row {
@@ -645,8 +631,12 @@ p {
 .grid__col--12 {
   display: flex;
   flex-direction: column;
-  flex-direction: row;
-  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .grid__col--12 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .grid__col--12 button {
@@ -654,26 +644,26 @@ p {
   margin: 25px;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-form > img {
+.form > img {
   align-self: center;
 }
 
-legend {
+.form .headline--secondary {
   text-align: left;
   margin-left: 40px;
   font-weight: 200;
 }
 
-label {
+.form__label--hidden {
   display: none;
 }
 
-input {
+.form__input {
   border: none;
   border-bottom: #56cdaf solid 5px;
   text-align: left;
@@ -710,10 +700,17 @@ input {
 .nav {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  width: 90%;
+  margin: auto;
 }
 .nav li {
   padding: 20px;
   color: #888;
+}
+.nav li a {
+  color: #6cdffa;
+  text-decoration: none;
 }
 .nav li:hover {
   background-color: #56cdaf;
@@ -732,29 +729,43 @@ input {
     padding: 10px;
     margin: 20px;
   }
+  .nav li a {
+    color: #888;
+  }
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  text-decoration: none;
+  text-align: center;
+  color: #888;
 }
 
-a {
-  color: #6cdffa;
-}
-
-h4 {
+.card p,
+.headline--primary p {
   text-align: left;
-  padding-left: 50px;
+  padding: 20px 50px;
 }
 
-h1 {
+.headline--primary {
   padding-left: 70px;
   text-align: left;
   color: #56cdaf;
 }
 
-blockquote {
+.headline--secondary {
+  text-align: left;
+  padding-left: 50px;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.grid__col--8 .headline--secondary {
+  padding-left: 30px;
+}
+
+.blockquote {
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
@@ -765,11 +776,9 @@ blockquote {
   border-left: 10px #56cdaf solid;
 }
 
-.headline--secondary {
-  text-align: left;
-  font-weight: 200;
-  padding: 0;
-  margin-left: 20px;
+.link {
+  text-decoration: none;
+  color: #6cdffa;
 }
 
 /*# sourceMappingURL=styles.css.map */

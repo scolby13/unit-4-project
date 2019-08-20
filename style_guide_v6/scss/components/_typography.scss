@@ -1,24 +1,35 @@
 .container {
     margin: 0 auto;
     max-width: $max-width;
-}
-a {
-    color: $link-color;
+    text-decoration: none;
+    text-align: center;
+    color: $text-color;
 }
 
-h4 {
+.card p,
+.headline--primary p {
     text-align: left;
-    padding-left: 50px;
-    
+    padding: 20px 50px;
 }
 
-h1 {
+.headline--primary {
     padding-left: 70px;
     text-align: left;
     color: $color-primary;
 }
 
-blockquote {
+.headline--secondary {
+    text-align: left;
+    padding-left: 50px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.grid__col--8 .headline--secondary {
+    padding-left: 30px;
+}
+
+.blockquote {
     font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
@@ -29,9 +40,7 @@ blockquote {
     border-left: 10px $color-primary solid;
 }
 
-.headline--secondary {
-    text-align: left;
-    font-weight: 200;
-    padding: 0;
-    margin-left: 20px;
+.link {
+    text-decoration: none;
+    color: $link-color;
 }

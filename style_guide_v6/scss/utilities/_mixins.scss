@@ -14,13 +14,19 @@
         li {
             padding: 10px;
             margin: 20px;
+
+            a {
+                color: $text-color;
+            }
         }
     }
 }
 
 @mixin big-grid {
-    flex-direction: row;
-    justify-content: space-around;
+    @media (min-width: $break-m) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 @mixin center-grid {
